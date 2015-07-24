@@ -20,6 +20,9 @@
 
 - (IBAction)insertionSort:(id)sender;
 
+- (IBAction)selectSort:(id)sender;
+
+- (IBAction)quickSort:(id)sender;
 
 @end
 
