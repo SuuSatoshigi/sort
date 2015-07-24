@@ -10,6 +10,16 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *number1;
+@property (weak, nonatomic) IBOutlet UITextField *number2;
+@property (weak, nonatomic) IBOutlet UITextField *number3;
+@property (weak, nonatomic) IBOutlet UITextField *number4;
+@property (weak, nonatomic) IBOutlet UITextField *number5;
+
+- (IBAction)bubbleSort:(id)sender;
+
+- (IBAction)insertionSort:(id)sender;
+
 
 @end
 
