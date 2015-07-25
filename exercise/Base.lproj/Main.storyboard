@@ -1,10 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WVQ-61-7uh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="nC0-vk-BGq">
+            <objects>
+                <navigationController id="WVQ-61-7uh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z1s-KV-Voq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bNU-uH-Eef" kind="relationship" relationship="rootViewController" id="wC3-Re-NRA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0rI-TV-2MR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1839" y="268"/>
+        </scene>
+        <!--算法-->
+        <scene sceneID="i9H-WC-LDy">
+            <objects>
+                <viewController id="bNU-uH-Eef" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ysj-xQ-zuP"/>
+                        <viewControllerLayoutGuide type="bottom" id="id1-O8-PuB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j7u-al-7vc">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCB-2l-zQI">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="排序算法">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="121" y="195" width="60" height="30"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="Twq-Iv-aqS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="oCB-2l-zQI"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="oCB-2l-zQI"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="算法" id="AVa-cx-BNf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQV-0X-9NA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-787.5" y="309"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -185,6 +243,12 @@
                                 <exclude reference="3Yk-f5-2k6"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="4sm-H0-d4z"/>
+                                <exclude reference="Aob-Ei-Ieo"/>
+                                <exclude reference="yua-TY-hVM"/>
+                                <exclude reference="H4B-Lx-sac"/>
+                                <exclude reference="rEb-WN-f0L"/>
+                                <exclude reference="dJa-nd-udc"/>
                                 <exclude reference="0nC-1I-GzR"/>
                                 <exclude reference="1iu-xY-PWd"/>
                                 <exclude reference="28z-GL-2jT"/>
@@ -203,18 +267,12 @@
                                 <exclude reference="wql-J4-UPf"/>
                                 <exclude reference="e6y-oW-mQ6"/>
                                 <exclude reference="uqq-ih-Kai"/>
-                                <exclude reference="Hvq-jC-Z5N"/>
-                                <exclude reference="RAi-9a-svK"/>
-                                <exclude reference="Y59-pT-qSJ"/>
                                 <exclude reference="2nI-66-PCJ"/>
                                 <exclude reference="ZoO-pm-tMC"/>
                                 <exclude reference="okb-p9-s2z"/>
-                                <exclude reference="4sm-H0-d4z"/>
-                                <exclude reference="Aob-Ei-Ieo"/>
-                                <exclude reference="yua-TY-hVM"/>
-                                <exclude reference="dJa-nd-udc"/>
-                                <exclude reference="H4B-Lx-sac"/>
-                                <exclude reference="rEb-WN-f0L"/>
+                                <exclude reference="Hvq-jC-Z5N"/>
+                                <exclude reference="RAi-9a-svK"/>
+                                <exclude reference="Y59-pT-qSJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -224,6 +282,12 @@
                                 <include reference="3Yk-f5-2k6"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="4sm-H0-d4z"/>
+                                <include reference="Aob-Ei-Ieo"/>
+                                <include reference="yua-TY-hVM"/>
+                                <include reference="H4B-Lx-sac"/>
+                                <include reference="rEb-WN-f0L"/>
+                                <include reference="dJa-nd-udc"/>
                                 <include reference="0nC-1I-GzR"/>
                                 <include reference="1iu-xY-PWd"/>
                                 <exclude reference="1sW-qg-TEN"/>
@@ -260,27 +324,22 @@
                                 <exclude reference="GVO-BY-5g7"/>
                                 <include reference="e6y-oW-mQ6"/>
                                 <include reference="uqq-ih-Kai"/>
-                                <include reference="Hvq-jC-Z5N"/>
-                                <exclude reference="Ncj-8h-nzX"/>
-                                <include reference="RAi-9a-svK"/>
-                                <include reference="Y59-pT-qSJ"/>
-                                <exclude reference="dSK-Go-VNX"/>
-                                <exclude reference="xdo-FF-5a6"/>
                                 <include reference="2nI-66-PCJ"/>
                                 <include reference="ZoO-pm-tMC"/>
                                 <exclude reference="dCZ-Fc-7l4"/>
                                 <exclude reference="gcX-be-pIo"/>
                                 <include reference="okb-p9-s2z"/>
                                 <exclude reference="sEa-f3-PEn"/>
-                                <include reference="4sm-H0-d4z"/>
-                                <include reference="Aob-Ei-Ieo"/>
-                                <include reference="yua-TY-hVM"/>
-                                <include reference="dJa-nd-udc"/>
-                                <include reference="H4B-Lx-sac"/>
-                                <include reference="rEb-WN-f0L"/>
+                                <include reference="Hvq-jC-Z5N"/>
+                                <exclude reference="Ncj-8h-nzX"/>
+                                <include reference="RAi-9a-svK"/>
+                                <include reference="Y59-pT-qSJ"/>
+                                <exclude reference="dSK-Go-VNX"/>
+                                <exclude reference="xdo-FF-5a6"/>
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="OZV-SY-AeA"/>
                     <connections>
                         <outlet property="number1" destination="2OI-33-7mx" id="ezf-4K-VsN"/>
                         <outlet property="number2" destination="LtV-92-fow" id="Y5Q-eN-AG1"/>
